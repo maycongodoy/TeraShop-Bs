@@ -1,0 +1,156 @@
+body {
+    background-image: linear-gradient(#5FF551, #D1F551);
+    width: 100vw;
+    height: 100vh;
+
+}
+
+
+.bi:hover {
+    background-color: rgb(218, 70, 70);
+    color: black;
+    transform: scale3d(1.4);
+    transition: 1s;
+}
+header ul li:hover {
+    background-color: rgb(218, 70, 70);
+    color: black;
+    transform: scale3d(1.5);
+    transition: 1s;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 1px solid #000000;
+}
+.m-right {
+    margin-right: 10px;
+}
+
+
+
+/* SLIDE */
+
+.slideShow {
+    height: 87vh;
+}
+.tamanh0-image {
+    height: 87vh;
+}
+.carousel {
+    transition: .2s ease-in-out;
+}
+/* SILDE */
+
+/* CATEGORIAS */
+
+.justify-content {
+    width: 80vw;
+    justify-content: space-around;
+}
+
+.image-categorias {
+    height: 140px;
+}
+@keyframes animacao {
+   0%{
+        transform: translateX(-40px);
+        ;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+section div ul li a {
+    animation: animacao 2s easy 0s 1 normal forwards;
+}
+
+section div ul {
+    margin-top: 20px;
+    justify-content: space-around;
+}
+section div ul li {
+    list-style: none;
+    
+}
+section div ul li a img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+} 
+.menu-responsivo {
+    display: none;
+}
+.img-menu {
+    width: 25px;
+}
+
+.menuResponsivo {
+    width: 50px;
+    height: 50px;
+}
+
+.hidden {
+    display: none;
+}
+.width-card {
+    width: 206px; 
+    border-radius: 4px;
+}
+
+@media (max-width: 1200px) {
+    header .container{
+        align-items: center;
+    }
+    .navResponsivo{
+        margin-left: 150px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .navResponsivo{
+        margin-right: 100px;
+    }
+    .inputResponsivo {
+        display: none !important;
+    }
+    .navResponsivo ul {
+        padding-right: 95px;
+    }
+    
+}
+
+@media (max-width: 770px) {
+    .navResponsivo {
+        flex-direction: column;
+    }
+    .navResponsivo ul {
+        display: none;
+    }
+    .menuResponsivo {
+        margin-left: -80px;
+        margin-top: 15px;
+        display: block;
+    }
+
+    section .animar img {
+        padding: 15px;
+        margin-right: 15px;
+    }
+    section .animar button {
+        margin-left: 15px;
+    }
+    section .animar button h2 {
+        line-height: 0.2;
+        font-size: calc(1.325rem + 0.1vw);
+        padding-top: 2px;
+    }
+
+    section .card {
+        width: 140px;
+     }
+    section .card .width-card {
+        width: 140px;
+     }
+
+}
