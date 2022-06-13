@@ -1,5 +1,5 @@
-body {
-    background-image: linear-gradient(#5FF551, #D1F551);
+body{
+    background-image: linear-gradient(white, #333);
     width: 100vw;
     height: 100vh;
 
@@ -21,16 +21,27 @@ header ul li:hover {
     -moz-border-radius: 200px 200px 200px 200px;
     -webkit-border-radius: 200px 200px 200px 200px;
     border: 1px solid #000000;
+
 }
 .m-right {
     margin-right: 10px;
 }
+.navbar-collapse ul {
+    height: 70px;
+}
+.navbar-collapse ul li a {
+    display: flex;
 
-
+}
+.navbar-collapse ul li {
+    margin-top: 25px;
+    padding-bottom: 0;
+}
 
 /* SLIDE */
 
 .slideShow {
+    margin-top: 80px;
     height: 87vh;
 }
 .tamanh0-image {
@@ -50,16 +61,6 @@ header ul li:hover {
 
 .image-categorias {
     height: 140px;
-}
-@keyframes animacao {
-   0%{
-        transform: translateX(-40px);
-        ;
-    }
-    100%{
-        transform: translateX(0px);
-        opacity: 1;
-    }
 }
 section div ul li a {
     animation: animacao 2s easy 0s 1 normal forwards;
@@ -96,31 +97,80 @@ section div ul li a img:hover {
     width: 206px; 
     border-radius: 4px;
 }
+.rodape{
+    justify-content: space-around;
+}
+.text-uppercase{
+    color: #000000;
+    font-family: fantasy;
+    font-size: x-large;
 
-@media (max-width: 1200px) {
-    header .container{
-        align-items: center;
+}
+.estrela {
+    height: 25px;
+    background-size: 100px;
+    background-image: url(./imagens/estrelinhas.png);
+    width: 50%;
+}
+.preco {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    font-size: 20px;
+}
+.frete {
+    color: rgb(88, 255, 88);
+}
+.rodape .sobreEmpresa ul {
+    list-style: none;
+}
+.rodape .sobreEmpresa ul li a  {
+   color: cornflowerblue;
+   list-style: none;
+   text-decoration: none;
+   
+}
+.rodape .sobreEmpresa2 ul {
+    list-style: none;
+}
+.rodape .sobreEmpresa2 ul li a {
+    color: cornflowerblue;
+    list-style: none;
+    text-decoration: none;
+}
+
+@media (max-width: 1180px) {
+    .navbar input{
+        display: none;
     }
-    .navResponsivo{
-        margin-left: 150px;
+    .navbar-nav  button{
+        display: none;
     }
 }
 
 
 @media (max-width: 992px) {
-    .navResponsivo{
-        margin-right: 100px;
-    }
-    .inputResponsivo {
-        display: none !important;
-    }
-    .navResponsivo ul {
-        padding-right: 95px;
-    }
+    .menu-hamburguer {
+   margin-left: 47% ;
+   width: min-content !important;
+   }
+   .navbar-collapse ul {
+    height: auto;
+    width: 100%;
+   }
+   .navbar-collapse ul {
     
+   }
+   
+    .logo {
+        height: 80px;
+        margin-bottom: 15px;
+    }
 }
 
 @media (max-width: 770px) {
+    .logo{
+        height: 70px !important;
+    }
     .navResponsivo {
         flex-direction: column;
     }
@@ -154,3 +204,34 @@ section div ul li a img:hover {
      }
 
 }
+
+@media (max-width: 524px) {
+    body {
+        width: auto;
+        height: auto;
+    }
+    .menu-hamburguer {
+        margin-left: 40% !important ;
+        width: min-content !important;
+        }
+} 
+@media (max-width: 490px) {
+    .categorias .container-fluid ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    section div ul  .card a .width-card {
+        width: 240px;
+    }
+    section div ul  .width-card {
+        width: 240px;
+    }
+    section div ul .tirar {
+        display: none;
+    }
+   footer .tirar2 {
+    display: none;
+    
+    }
+}
+
