@@ -93,8 +93,11 @@ section div ul li a img:hover {
 .hidden {
     display: none;
 }
+.card {
+    width: 253px;
+}
 .width-card {
-    width: 206px; 
+    width: 253px; 
     border-radius: 4px;
 }
 .rodape{
