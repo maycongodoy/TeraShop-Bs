@@ -92,13 +92,10 @@ section div ul li a img:hover {
     width: 253px;
 }
 .width-card {
-<<<<<<< HEAD:assets/css/style.css
+
     width: 253px; 
     border-radius: 4px;
-=======
-  width: 206px;
-  border-radius: 4px;
->>>>>>> 7f1f941139b6a8ac38d7b3a8a8f812e9fbfc1b2a:style.css
+
 }
 .rodape {
   justify-content: space-around;
@@ -110,17 +107,17 @@ section div ul li a img:hover {
 }
 .estrela {
   height: 25px;
-  background-size: 100px;
-  background-image: url(./imagens/estrelinhas.png);
+  background-size: 90px;
+  background-image: url(../imagens/img\ home/estrela.png);
   width: 50%;
 }
 .preco {
-  color: white;
-  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  color: #333;
   font-size: 20px;
 }
 .frete {
-  color: rgb(88, 255, 88);
+  color: rgb(15, 15, 108);
+  font-weight: 800;
 }
 .rodape .sobreEmpresa ul {
   list-style: none;
@@ -160,7 +157,7 @@ section div ul li a img:hover {
   .navbar-collapse ul {
     height: auto;
     width: 100%;
-<<<<<<< HEAD:assets/css/style.css
+
    }
 
    
@@ -168,7 +165,7 @@ section div ul li a img:hover {
         height: 80px;
         margin-bottom: 15px;
     }
-=======
+
   }
   .navbar-collapse ul {
   }
@@ -177,8 +174,6 @@ section div ul li a img:hover {
     height: 80px;
     margin-bottom: 15px;
   }
->>>>>>> 7f1f941139b6a8ac38d7b3a8a8f812e9fbfc1b2a:style.css
-}
 
 @media (max-width: 770px) {
   .logo {
@@ -245,7 +240,6 @@ section div ul li a img:hover {
     display: none;
   }
 }
-<<<<<<< HEAD:assets/css/style.css
 
 @media (min-width: 770px) and (max-width: 995px) {
     section div ul  .card {
@@ -256,5 +250,3 @@ section div ul li a img:hover {
     }
 }
 
-=======
->>>>>>> 7f1f941139b6a8ac38d7b3a8a8f812e9fbfc1b2a:style.css
