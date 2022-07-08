@@ -1,0 +1,251 @@
+body{
+    background-image: linear-gradient(white, #333);
+    width: 100vw;
+    height: 100vh;
+
+}
+
+
+.bi:hover {
+    background-color: rgb(218, 70, 70);
+    color: black;
+    transform: scale3d(1.4);
+    transition: 1s;
+}
+header ul li:hover {
+    background-color: rgb(218, 70, 70);
+    color: black;
+    transform: scale3d(1.5);
+    transition: 1s;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 1px solid #000000;
+
+}
+.m-right {
+    margin-right: 10px;
+}
+.navbar-collapse ul {
+    height: 70px;
+}
+.navbar-collapse ul li a {
+    display: flex;
+
+}
+.navbar-collapse ul li {
+    margin-top: 25px;
+    padding-bottom: 0;
+}
+
+/* SLIDE */
+
+.slideShow {
+    margin-top: 80px;
+    height: 87vh;
+}
+.tamanh0-image {
+    height: 87vh;
+}
+.carousel {
+    transition: .2s ease-in-out;
+}
+/* SILDE */
+
+/* CATEGORIAS */
+
+.justify-content {
+    width: 80vw;
+    justify-content: space-around;
+}
+
+.image-categorias {
+    height: 140px;
+}
+section div ul li a {
+    animation: animacao 2s easy 0s 1 normal forwards;
+}
+
+section div ul {
+    margin-top: 20px;
+    justify-content: space-around;
+}
+section div ul li {
+    list-style: none;
+    
+}
+section div ul li a img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+} 
+.menu-responsivo {
+    display: none;
+}
+.img-menu {
+    width: 25px;
+}
+
+.menuResponsivo {
+    width: 50px;
+    height: 50px;
+}
+
+.hidden {
+    display: none;
+}
+.card {
+    width: 253px;
+}
+.width-card {
+    width: 253px; 
+    border-radius: 4px;
+}
+.rodape{
+    justify-content: space-around;
+}
+.text-uppercase{
+    color: #000000;
+    font-family: fantasy;
+    font-size: x-large;
+
+}
+.estrela {
+    height: 25px;
+    background-size: 100px;
+    background-image: url(./imagens/estrelinhas.png);
+    width: 50%;
+}
+.preco {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    font-size: 20px;
+}
+.frete {
+    color: rgb(88, 255, 88);
+}
+.rodape .sobreEmpresa ul {
+    list-style: none;
+}
+.rodape .sobreEmpresa ul li a  {
+   color: cornflowerblue;
+   list-style: none;
+   text-decoration: none;
+   
+}
+.rodape .sobreEmpresa2 ul {
+    list-style: none;
+}
+.rodape .sobreEmpresa2 ul li a {
+    color: cornflowerblue;
+    list-style: none;
+    text-decoration: none;
+}
+.tamanho-width {
+    width: max-content !important
+}
+
+
+@media (max-width: 1180px) {
+    .navbar input{
+        display: none;
+    }
+    .navbar-nav  button{
+        display: none;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .menu-hamburguer {
+   margin-left: 47% ;
+   width: min-content !important;
+   }
+   .navbar-collapse ul {
+    height: auto;
+    width: 100%;
+   }
+
+   
+    .logo {
+        height: 80px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 770px) {
+    .logo{
+        height: 70px !important;
+    }
+    .navResponsivo {
+        flex-direction: column;
+    }
+    .navResponsivo ul {
+        display: none;
+    }
+    .menuResponsivo {
+        margin-left: -80px;
+        margin-top: 15px;
+        display: block;
+    }
+
+    section .animar img {
+        padding: 15px;
+        margin-right: 15px;
+    }
+    section .animar button {
+        margin-left: 15px;
+    }
+    section .animar button h2 {
+        line-height: 0.2;
+        font-size: calc(1.325rem + 0.1vw);
+        padding-top: 2px;
+    }
+
+    section .card {
+        width: 140px;
+     }
+    section .card .width-card {
+        width: 140px;
+     }
+
+}
+
+@media (max-width: 524px) {
+    body {
+        width: auto;
+        height: auto;
+    }
+    .menu-hamburguer {
+        margin-left: 40% !important ;
+        width: min-content !important;
+        }
+} 
+@media (max-width: 490px) {
+    .categorias .container-fluid ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    section div ul  .card a .width-card {
+        width: 240px;
+    }
+    section div ul  .width-card {
+        width: 240px;
+    }
+    section div ul .tirar {
+        display: none;
+    }
+   footer .tirar2 {
+    display: none;
+    
+    }
+}
+
+@media (min-width: 770px) and (max-width: 995px) {
+    section div ul  .card {
+        width: 180px;
+    }
+    section div ul  .width-card {
+        width: 180px;
+    }
+}
+
