@@ -286,17 +286,13 @@
             <a href="">COMPRAR</a>
           </div>
           <div class="prazo">
-            <div class="titprazo">Consulte prazo de Entrega</div>
-            <form method="POST" id="cep" class="cep">
-              <input type="text" placeholder="Digite o CEP" />
-              <input type="Submit" />
-
-              <div class="inputEnd">
-                <input type="text" id="dias" placeholder="Dias" required />
-                <label for="endereco"
-                  >digite o CEP para calcular tempo de entrega</label
-                >
-              </div>
+            <label class="titprazo">Consulte CEP</label>           
+            <input type="number" id="cep" placeholder="Digite o CEP" />
+            <button onclick="consultaEndereco()">Consulte</button>
+            <div id="resultado">
+              <p>seu resultado aqui</p>
+            </div>
+            
             </form>
           </div>
         </div>
@@ -391,5 +387,6 @@
     <script>
       new window.VLibras.Widget('https://vlibras.gov.br/app')
     </script>
+    <script src="../assets/js/cep.js"></script>
   </body>
 </html>
